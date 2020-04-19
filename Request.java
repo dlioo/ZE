@@ -39,7 +39,7 @@ public class Request {
 		String apiKey = "";
 
 		String url = String.format(HEADLINE_REQUEST_TEMPLATE,
-				source, "top", "");
+				source, "top", apiKey);
 
 	    try {
 			Set<String> existingHeadlines = readCSV(path);
